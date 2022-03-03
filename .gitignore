@@ -141,3 +141,6 @@ configs/secrets.yaml
 mlruns/
 
 
+logs/running_logs.log
+data/data.zip
+logs/running_logs.log
