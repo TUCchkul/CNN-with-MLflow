@@ -1,0 +1,44 @@
+ 
+[2022-03-03 15:11:31,142: INFO: stage_04_train]: 
+********************
+[2022-03-03 15:11:31,142: INFO: stage_04_train]: >>>>> stage Training started <<<<<
+[2022-03-03 15:11:31,145: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-03-03 15:11:31,145: ERROR: stage_04_train]: 'params'
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 89, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_04_train.py", line 30, in main
+    params = config["params"]
+KeyError: 'params'
+[2022-03-03 15:13:49,310: INFO: stage_04_train]: 
+********************
+[2022-03-03 15:13:49,310: INFO: stage_04_train]: >>>>> stage Training started <<<<<
+[2022-03-03 15:13:49,325: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-03-03 15:13:49,325: INFO: stage_04_train]: read the data from data\PetImages
+[2022-03-03 15:13:49,325: ERROR: stage_04_train]: [WinError 3] The system cannot find the path specified: 'data\\PetImages'
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 89, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_04_train.py", line 39, in main
+    batch_size=params["batch_size"]
+  File "D:\MLflow\CNN-with-MLflow\env\lib\site-packages\keras\preprocessing\image_dataset.py", line 199, in image_dataset_from_directory
+    follow_links=follow_links)
+  File "D:\MLflow\CNN-with-MLflow\env\lib\site-packages\keras\preprocessing\dataset_utils.py", line 66, in index_directory
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'data\\PetImages'
+[2022-03-03 15:15:55,273: INFO: stage_04_train]: 
+********************
+[2022-03-03 15:15:55,273: INFO: stage_04_train]: >>>>> stage Training started <<<<<
+[2022-03-03 15:15:55,273: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-03-03 15:15:55,273: INFO: stage_04_train]: read the data from data\PetImages
+[2022-03-03 15:15:55,273: ERROR: stage_04_train]: [WinError 3] The system cannot find the path specified: 'data\\PetImages'
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 89, in <module>
+    main(config_path=parsed_args.config)
+  File "src/stage_04_train.py", line 39, in main
+    batch_size=params["batch_size"]
+  File "D:\MLflow\CNN-with-MLflow\env\lib\site-packages\keras\preprocessing\image_dataset.py", line 199, in image_dataset_from_directory
+    follow_links=follow_links)
+  File "D:\MLflow\CNN-with-MLflow\env\lib\site-packages\keras\preprocessing\dataset_utils.py", line 66, in index_directory
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'data\\PetImages'
